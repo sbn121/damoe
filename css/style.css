@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+body {
+    font-family: "Maven Pro", "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    color: #000;
+    background: url(../images/bg.png);
+}
+.d-none {
+    display: none;
+}
+ul, ol {
+    list-style-type: none;
+}
+a, a:link {
+    color: inherit;     /*부모요소로부터 상속받은 색상*/
+    text-decoration: none;
+}
+/* 이벤트 배너 */
+.event {
+    position: absolute ;
+    right: 5%;
+    top: 15%;
+}
+/* ===============================헤더영역================================== */
+.header-wrap {
+    width: 1190px;          /*화면 폭이 1190 이하면, 100%*/
+    margin: 0 auto;
+    padding: 50px 0;
+    overflow: hidden;
+}
+.header-wrap .main-logo {
+    float: left;
+}
+.main-nav {
+    float: left;
+    margin-left: 50px;
+}
+.main-nav ul  {
+    border-left: 1px solid #000;
+}
+.main-nav ul li {
+    margin-bottom: 10px;
+}
+.main-nav ul li a {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #666;
+    
+    padding: 0 0 0 20px;
+    transition: all .4s cubic-bezier(.8,.08,.2,.76);
+}
+.main-nav ul li a:hover {
+    color: #604449;
+}
+.sns-links {
+    float: right;
+}
+.sns-links li {
+    float: left;
+}
+.sns-links li:nth-child(2) {
+    margin: 0 10px;
+}
+.sns-links img {
+    opacity: 30%;
+    transition: all .4s cubic-bezier(.8,.08,.2,.76);
+}
+.sns-links img:hover {
+    opacity: 100%;
+}
+/* ============visaul 영역============== */
+.hero-img {
+    background:url("../images/visual_bg.jpg") no-repeat center / cover;
+    /* 배경 이미지 경로, 배경 반복 안함, 배경 위치 중앙, 배경 크기 확장<->축소(contain) */
+}
+.main-item {
+    max-width: 1190px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+.main-item img {
+    position: absolute;
+    right: 0;
+    bottom: -65px;
+}
