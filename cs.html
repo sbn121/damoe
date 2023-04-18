@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&family=Noto+Sans+KR:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    ",
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css"
+      integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>다모애</title>
+  </head>
+  <body>
+    <h1 class="d-none">다모애 테라피 샴푸</h1>
+    <div class="event">
+      <a href="#">
+        <img src="images/side_img.png" alt="다모애 헤어토닉 증정이벤트" />
+      </a>
+    </div>
+    <header>
+      <div class="header-wrap">
+        <div class="main-logo">
+          <a href="/">
+            <img src="images/logo.png" alt="한방샴푸 브랜드 다모애" />
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">다모애</a></li>
+            <li><a href="#">제품소개</a></li>
+            <li><a href="#">샘플신청</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </nav>
+        <ul class="sns-links">
+          <li>
+            <a href="#"><img src="images/top_icon1.png" alt="처음으로" /></a>
+          </li>
+          <li>
+            <a href="mailto:cs@damoe.com"
+              ><img src="images/top_icon2.png" alt="이메일"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/top_icon3.png" alt="검색" /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="hero-img">
+        <!-- 헤어 모델 사진을 배경으로 표현 -->
+        <div class="main-item">
+            <img src="images/visual_img.png" alt="테라피 골드 샴푸">
+        </div>
+    </div>
+    <section id="main">
+      <h2 class="d-none">다모애 샴푸</h2>
+      <article>
+        <h3 class="article-title">고객센터</h3>
+        <h4 class="article-subtitle">오시는 길</h4>
+        <div class="map-wrap">
+          <div id="map"></div>
+          <ul class="info">
+            <li>
+                <img src="images/icon-bus.png" alt=버스"">
+                <p>문흥 38, 지원 25 <br>문흥 38, 지원 25</p>
+            </li>
+            <li>
+                <img src="images/icon-metro.png" alt=지하철"">
+                <p>지하철 1호선 농성역 4번 출구, <br>도보로 5분 거리</p>
+            </li>
+            <li>
+                <img src="images/icon-car.png" alt="승용차">
+                <p>광주 서구 경열로 3,<br>(농성동 271-4)</p>
+            </li>
+            </ul>
+      </article>
+    </section>
+    <aside>
+      <div class="news">
+        <p>event</p>
+        <p>현재 진행중인 이벤트가 없습니다.</p>
+      </div>
+    </aside>
+    <footer>
+      <div class="footer-wrap">
+        <ul class="extras-link">
+          <li><a href="#">개인정보취급방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">오시는길</a></li>
+        </ul>
+        <div class="sub-logo">
+          <a href="/">
+            <img src="images/footer_logo.png" alt="다모애" />
+          </a>
+        </div>
+        <p>
+          상호명:다모애 대표자:이지연 주소:광주 서구 경열로 3 다모애 <br />
+          대표전화:062-362-7797 개인정보취급관리책임자:홍길동 이메일 주소:메일
+          잘 확인안함
+        </p>
+        <p>&copy; <span class="brand">damoe.</span></p>
+      </div>
+    </footer>
+    <script
+          type="text/javascript"
+          src="//dapi.kakao.com/v2/maps/sdk.js?appkey=daa7c0e74f4dd4c1ae06d1065bbbbf86
+        "
+        ></script>
+        <script>
+          var container = document.getElementById("map"); //지도를 담을 영역의 DOM 레퍼런스
+          var options = {
+            //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(39.05979145540205, 125.7684836581112), //지도의 중심좌표.
+            level: 3, //지도의 레벨(확대, 축소 정도)
+          };
+
+          var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+          // 마커가 표시될 위치입니다 
+            var markerPosition  = new kakao.maps.LatLng(39.05979145540205, 125.7684836581112); 
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+            position: markerPosition
+              });
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+        </script>
+  </body>
+</html>

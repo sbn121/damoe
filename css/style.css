@@ -170,6 +170,58 @@ a, a:link {
 .pager li:nth-child(1) {
     background: var(--point-color);
 }
+/* ====================== 카카오 지도API - 고객센터 ==================== */
+.article-title {
+    margin: 30px 0 10px 0;
+}
+.article-subtitle {
+    margin: 0 0 20px 0;
+    color: var(--third-color);
+}
+.article-title, .article-subtitle {
+    text-align: center;
+}
+.map-wrap {
+    max-width: var(--screen-width);
+    margin: 0 auto;
+}
+#map{
+    height: 400px;
+}
+.info {
+    display: flex;
+    gap : 0 10px;
+    margin: 1rem 0 0 0;
+}
+.info li {
+    flex: 1 1 auto;      /* 3등분 */
+    /* 
+    flex-shrink : 축소
+    flex-grow : 확대
+    flex-basis : 기본크기
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .info li {
+    display: inline-block;
+    width: 33.333333333333333333333333333%; 3등분
+    margin: 0 10px;
+} */
+.info img {
+    width: 60px;
+    margin: 0 2rem 0 0;
+}
+/* .info img {
+    width: 60px;
+    float: left;
+    margin: 0 2rem 0 0;
+}
+.info p {
+    margin: 1rem 0 0 0;
+} */
+
 /* ===========event 소식 영역==================== */
 aside {
     background: var(--sub-color);
